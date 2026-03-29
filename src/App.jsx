@@ -59,7 +59,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
             {/* The CPF Fraud Video Hook */}
             <div className="bg-white rounded-3xl p-6 shadow-[0_10px_30px_rgba(245,158,11,0.1)] border-4 border-[#F59E0B] flex flex-col">
-              <h2 className="text-2xl font-black mb-4 text-slate-900 tracking-tight uppercase">Forensic Evidence: $90k Fraud</h2>
+              <h2 className="text-2xl font-black mb-4 text-slate-900 tracking-tight uppercase">Audio Evidence: Control</h2>
               <div className="aspect-w-16 aspect-h-9 w-full bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200 mt-auto">
                 <iframe 
                   src="https://www.youtube.com/embed/GcnPlCD62h4" 
@@ -73,7 +73,7 @@ function App() {
 
             {/* Voice Audio Hook */}
             <div className="bg-white rounded-3xl p-6 shadow-[0_10px_30px_rgba(245,158,11,0.1)] border-4 border-[#F59E0B] flex flex-col">
-              <h2 className="text-2xl font-black mb-4 text-slate-900 tracking-tight uppercase">Audio Evidence: Control</h2>
+              <h2 className="text-2xl font-black mb-4 text-slate-900 tracking-tight uppercase">Forensic Evidence: $90k Fraud</h2>
               <div className="aspect-w-16 aspect-h-9 w-full bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200 mt-auto">
                 <iframe 
                   src="https://www.youtube.com/embed/UGqGyLohcPs" 
@@ -86,38 +86,53 @@ function App() {
             </div>
           </div>
 
-          {/* Digital Chronicle Section */}
-          <section className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border-l-8 border-[#F59E0B] relative z-10 my-12 transition-all hover:shadow-[0_20px_50px_rgba(16,185,129,0.2)]">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-8 tracking-tight uppercase">Digital Chronicle: The Full Story</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              
-              {/* Cinematic Video Item */}
-              <div className="space-y-4 flex flex-col">
-                <h3 className="text-2xl font-bold text-[#10B981] border-b-2 border-[#10B981]/20 pb-2 uppercase">Cinematic Documentary</h3>
-                <div className="aspect-video bg-slate-100 rounded-xl overflow-hidden shadow-inner border-2 border-[#10B981]">
-                  <iframe src="https://www.youtube.com/embed/S20m0w-B1L4" title="The 50% Threshold" className="w-full h-full" allowFullScreen />
-                </div>
-                <a href="https://youtu.be/BVQ-SWVHw_s" target="_blank" rel="noopener noreferrer" className="block p-4 bg-slate-50 hover:bg-[#10B981]/10 rounded-xl transition-all border border-slate-200">
-                  <strong className="block text-lg mb-1 text-slate-900">Watch: The 50% Threshold</strong>
-                  <span className="text-[#10B981] font-black text-sm uppercase underline">Open Link &rarr;</span>
-                </a>
-              </div>
+          {/* DIGITAL AFFIDAVIT SECTION (REPLACING IFRAMES WITH DIRECT LINKS) */}
+<section className="bg-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl border-l-8 border-sky-500 text-white my-12">
+  <h2 className="text-3xl md:text-4xl font-extrabold text-sky-400 mb-8 tracking-tight uppercase">
+    Digital Affidavit
+  </h2>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    {/* Cinematic Video Item */}
+    <div className="space-y-4">
+      <h3 className="text-2xl font-bold text-emerald-400 border-b border-emerald-400/30 pb-2 uppercase">
+        Cinematic Video
+      </h3>
+      <a 
+        href="https://youtu.be/BVQ-SWVHw_s" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="block p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all border border-slate-700 hover:border-emerald-400 group"
+      >
+        <strong className="block text-xl mb-2 text-white">The 50% Threshold</strong>
+        <span className="text-emerald-400 font-black text-sm uppercase flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+          Watch Video &rarr;
+        </span>
+      </a>
+    </div>
 
-              {/* Origin Story Item */}
-              <div className="space-y-4 flex flex-col">
-                <h3 className="text-2xl font-bold text-[#F59E0B] border-b-2 border-[#F59E0B]/20 pb-2 uppercase">The Origin Story</h3>
-                <div className="aspect-video bg-slate-100 rounded-xl overflow-hidden shadow-inner border-2 border-[#F59E0B]">
-                  {/* Replace with your com2025 video link */}
-                  <iframe src="https://www.youtube.com/embed/your_com2025_id" title="The Journey of Resilience" className="w-full h-full" allowFullScreen />
-                </div>
-                <a href="https://youtu.be/FEzWl9MBR_4" target="_blank" rel="noopener noreferrer" className="block p-4 bg-slate-50 hover:bg-[#F59E0B]/10 rounded-xl transition-all border border-slate-200">
-                  <strong className="block text-lg mb-1 text-slate-900">Watch: The Journey of Resilience</strong>
-                  <span className="text-[#F59E0B] font-black text-sm uppercase underline">Watch Video &rarr;</span>
-                </a>
-              </div>
+    {/* Origin Story Item */}
+    <div className="space-y-4">
+      <h3 className="text-2xl font-bold text-[#F59E0B] border-b border-[#F59E0B]/30 pb-2 uppercase">
+        The Origin Story
+      </h3>
+      <a 
+        href="https://youtu.be/FEzWl9MBR_4" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="block p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all border border-slate-700 hover:border-[#F59E0B] group"
+      >
+        <strong className="block text-xl mb-2 text-white">The Journey of Resilience</strong>
+        <span className="text-[#F59E0B] font-black text-sm uppercase flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+          Watch Video &rarr;
+        </span>
+      </a>
+    </div>
 
-            </div>
-          </section>
+  </div>
+</section>
+
         </div>
       </header>
 
