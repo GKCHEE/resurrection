@@ -440,9 +440,58 @@ function App() {
           </div>
         </div>
       </footer>
+    {/* SECTION 7: LIVING PROOF / TECHNICAL SOVEREIGNTY */}
+      <section className="py-24 px-6 bg-gradient-to-t from-[#10B981]/10 to-white border-t-8 border-[#10B981] relative z-10 w-full">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-6xl font-black text-slate-900 mb-10 uppercase tracking-tighter leading-none">
+            Living Proof: <span className="text-[#10B981]">Technical Sovereignty</span>
+          </h2>
+          <p className="text-xl md:text-2xl text-slate-700 mb-16 max-w-4xl mx-auto font-bold leading-relaxed text-justify">
+            Beyond the forensic evidence lies the result of my survival. I engineered <strong>Notes & Journal Studio</strong> to prove my cognitive recovery. This is a full-stack, private workspace built with React and Supabase—a technical fortress constructed while operating at 50% biological capacity.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* User Guide Video Window */}
+            <div className="bg-white p-6 rounded-[40px] shadow-2xl border-4 border-slate-100">
+              <p className="text-xs font-black uppercase text-slate-400 mb-4 tracking-[0.3em] text-left ml-2">Internal User Guide</p>
+              <div className="aspect-video bg-black rounded-3xl overflow-hidden shadow-inner border-2 border-slate-200">
+                <iframe 
+                  src="https://youtube.com/embed/ziarn2LokLM" 
+                  title="Notes & Journal Studio Guide" 
+                  className="w-full h-full"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* The App Entry Point */}
+            <div className="text-left space-y-8">
+              <div className="p-10 bg-white rounded-[50px] shadow-2xl border-l-[16px] border-[#F59E0B] hover:scale-[1.02] transition-transform duration-300">
+                <h3 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Enter the Studio</h3>
+                <p className="text-lg text-slate-600 mb-8 font-bold leading-relaxed">
+                  This application is a primary asset of my restoration. If you find value in this tool, you may <u>choose what to pay</u> as a direct contribution toward my life stability and formal ACCA education.
+                </p>
+                <a href="https://startling-babka-390424.netlify.app/" 
+                   target="_blank" rel="noopener noreferrer" 
+                   className="inline-block bg-[#F59E0B] text-white px-10 py-5 rounded-full font-black text-xl hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition-all uppercase tracking-widest border-b-4 border-amber-700">
+                  Open Studio &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-24 mt-24 border-t border-slate-200 opacity-50">
+            <p className="text-slate-400 font-black uppercase tracking-[0.5em] text-xs text-center">
+              © 2026 DIGITAL AFFIDAVIT | LIFE RECONSTRUCTION PORTAL | CHIN CHEONG GHEE
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
-}
+};
 
 export default App;
+
 
